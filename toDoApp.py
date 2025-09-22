@@ -18,13 +18,16 @@ def removetask(tasknumber):
 
 def main():
     while True:
-        print("1 Add Task")
-        print("2.Show Tasks")
-        print("3.Remove Task")
-        print("4.Exit")
+        print("=======================================")
+        print(">>> TO DO MENU: <<<")
+        print("   1.Add Task")
+        print("   2.Show Tasks")
+        print("   3.Remove Task")
+        print("   4.Exit")
         ch = input("Enter number of action to execute: ")
+        print("=======================================")
         if ch=="1":
-            t = input("Enter task : ")
+            t = input("Enter task: ")
             addtask(t)
         elif ch=="2":
             print("Here's the list of your tasks:\n")
