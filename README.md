@@ -1,5 +1,5 @@
 # Exercise3
-## Updates
+## Updates - Christian
 - Added input validation:
   - Prevents adding empty tasks.
   - Prevents removing tasks with invalid numbers.
