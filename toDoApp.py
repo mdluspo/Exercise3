@@ -48,8 +48,14 @@ def main():
                 print("No tasks to remove.")
             else:
                 try:
-                    delete = int(input("Enter task number to remove: "))
-                    remove_task(delete)
+                    print ("List of Tasks:")
+                    show_tasks()
+                    delete = int(input("\n Enter task number to remove: "))
+                    confirm = input("Please confirm removal of task number (Y/N): ")
+                    if (confirm == "Y") or (confirm == "y"):
+                        remove_task(delete)
+                    else:
+                        print("Task removal cancelled.")
                 except ValueError:
                     print("Please enter a valid number!")
         elif choice == "4":
