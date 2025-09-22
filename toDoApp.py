@@ -1,5 +1,13 @@
 #feature-ui
+
 tasks=[]
+
+"""
+This is a simple to-do list application.
+It allows users to add, view, and remove tasks from their to-do list.
+The application runs in a loop, presenting a menu of options to the user until they choose to exit.
+The tasks are stored in a list, and the user can interact with the application through console input.
+"""
 
 def addtask(task) :
     tasks.append(task)
