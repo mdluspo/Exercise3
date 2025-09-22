@@ -1,5 +1,4 @@
 # toDoApp.py
-# test
 tasks=[]
 
 def addtask(task) :
