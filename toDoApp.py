@@ -2,7 +2,6 @@
 
 tasks=[]
 
-#test 
 
 def addtask(task) :
   tasks.append(task)
