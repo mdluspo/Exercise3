@@ -6,23 +6,23 @@ The tasks are stored in a list, and the user can interact with the application t
 """
 tasks = []
 
-def addtask(task):
+def add_task(task):
     if not task.strip():
         print("Task cannot be empty!")
     else:
         tasks.append(task.strip())
         print("Task added!")
 
-def showTasks():
+def show_tasks():
     if len(tasks) == 0:
         print("No tasks yet.")
     else:
         for i, task in enumerate(tasks, start=1):
             print(f"{i}. {task}")
 
-def removetask(tasknumber):
-    if 1 <= tasknumber <= len(tasks):
-        removed = tasks.pop(tasknumber - 1)
+def remove_task(task_number):
+    if 1 <= task_number <= len(tasks):
+        removed = tasks.pop(task_number - 1)
         print(f"Task removed: {removed}")
     else:
         print("Invalid task number!")
@@ -35,24 +35,24 @@ def main():
         print("   2.Show Tasks")
         print("   3.Remove Task")
         print("   4.Exit")
-        ch = input("Enter number of action to execute: ")
+        choice = input("Enter number of action to execute: ")
         print("=======================================")
 
-        if ch == "1":
-            t = input("Enter task: ")
-            addtask(t)
-        elif ch == "2":
-            showTasks()
-        elif ch == "3":
+        if choice == "1":
+            opt = input("Enter task: ")
+            add_task(opt)
+        elif choice == "2":
+            show_tasks()
+        elif choice == "3":
             if len(tasks) == 0:
                 print("No tasks to remove.")
             else:
                 try:
-                    n = int(input("Enter task number to remove: "))
-                    removetask(n)
+                    delete = int(input("Enter task number to remove: "))
+                    remove_task(delete)
                 except ValueError:
                     print("Please enter a valid number!")
-        elif ch == "4":
+        elif choice == "4":
             print("Goodbye!")
             break
         else:
