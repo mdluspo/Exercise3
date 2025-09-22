@@ -1,6 +1,4 @@
-# toDoApp.py
-#martin ba to?
-#ata boy?
+
 tasks=[]
 
 
