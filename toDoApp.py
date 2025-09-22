@@ -1,7 +1,4 @@
-# toDoApp.py
-#liittekteknichristian
 tasks=[]
-
 def addtask(task) :
   tasks.append(task)
   print("task added!")
